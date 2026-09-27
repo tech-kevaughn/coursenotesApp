@@ -37,15 +37,16 @@ https://youtu.be/xD5jn7dN1dg
 - Cloud-hosted PostgreSQL database
 - Publicly deployed web application
 
-
 ## Project Structure
 
-coursenotesApp
+```text
+coursenotesApp/
+│
+├── README.md
 ├── app.js
 ├── index.html
-├── README.md
 └── style.css
-
+```
 
 ## Technologies Used
 
