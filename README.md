@@ -87,6 +87,10 @@ This prevents one authenticated user from accessing another user's assignment da
 7. Row Level Security controls access to the assignment records.
 8. Users can view, update, and delete their own assignments.
 
+## YouTube 
+https://youtu.be/xD5jn7dN1dg 
+
+
 ## Project Structure
 
 ```text
@@ -96,5 +100,3 @@ coursenotesApp/
 ├── app.js
 └── README.md
 
-## YouTube 
-https://youtu.be/xD5jn7dN1dg 
