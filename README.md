@@ -1,4 +1,4 @@
-# CourseNotes
+# CourseNotes App
 
 CourseNotes is a web-based assignment management application designed to help college students organize their courses, assignments, due dates, and academic tasks.
 
