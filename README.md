@@ -4,6 +4,12 @@ CourseNotes is a web-based assignment management application designed to help co
 
 The application allows users to create an account, securely log in, and manage their own assignments through a simple dashboard.
 
+## Live Application
+
+CourseNotes is deployed using Netlify:
+
+https://coursenotes-app.netlify.app
+
 ## How It Works
 
 1. A user registers for a CourseNotes account.
@@ -15,10 +21,6 @@ The application allows users to create an account, securely log in, and manage t
 7. Row Level Security controls access to the assignment records.
 8. Users can view, update, and delete their own assignments.
 
-
-## YouTube 
-
-https://youtu.be/xD5jn7dN1dg 
 
 
 ## Features
@@ -98,13 +100,11 @@ Policies are configured for:
 
 This prevents one authenticated user from accessing another user's assignment data.
 
+## YouTube 
+
+https://youtu.be/xD5jn7dN1dg 
 
 
-## Live Application
-
-CourseNotes is deployed using Netlify:
-
-https://coursenotes-app.netlify.app
 
 
 
