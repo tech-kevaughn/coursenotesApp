@@ -28,12 +28,11 @@ https://youtu.be/xD5jn7dN1dg
 
 ## Project Structure
 
-CoursenotesApp
-- README.md
-- index.html
-- style.css
-- app.js
-
+coursenotesApp
+├── README.md
+├── app.js
+├── index.html
+└── style.css
 
 
 ## Technologies Used
