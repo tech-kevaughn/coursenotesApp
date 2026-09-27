@@ -29,9 +29,9 @@ https://youtu.be/xD5jn7dN1dg
 ## Project Structure
 
 coursenotesApp
-├── README.md
 ├── app.js
 ├── index.html
+├── README.md
 └── style.css
 
 
