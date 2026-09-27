@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CourseNotes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Supabase JavaScript library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>CourseNotes</h1>
+        <p>Keep track of your courses, assignments, and due dates.</p>
+    </header>
+
+    <main>
+
+        <!-- =========================
+             LOGIN / REGISTRATION
+        ========================== -->
+        <section id="auth-section" class="card">
+
+            <h2>Welcome to CourseNotes</h2>
+            <p>Create an account or log in to manage your assignments.</p>
+
+            <div class="auth-form">
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="student@example.com"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    required
+                >
+
+                <div class="button-group">
+                    <button id="login-btn">Log In</button>
+                    <button id="register-btn" class="secondary-btn">
+                        Register
+                    </button>
+                </div>
+
+                <p id="auth-message"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAIN APPLICATION
+        ========================== -->
+        <section id="app-section" class="hidden">
+
+            <div class="user-bar">
+                <p>
+                    Logged in as:
+                    <strong id="user-email"></strong>
+                </p>
+
+                <button id="logout-btn" class="danger-btn">
+                    Log Out
+                </button>
+            </div>
+
+
+            <!-- ADD / EDIT ASSIGNMENT -->
+            <section class="card">
+
+                <h2 id="form-title">Add Assignment</h2>
+
+                <form id="assignment-form">
+
+                    <label for="course-name">
+                        Course Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="course-name"
+                        placeholder="Example: Engineering Design 2"
+                        required
+                    >
+
+
+                    <label for="assignment-name">
+                        Assignment Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assignment-name"
+                        placeholder="Example: Build Software with AI"
+                        required
+                    >
+
+
+                    <label for="due-date">
+                        Due Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="due-date"
+                        required
+                    >
+
+
+                    <label for="status">
+                        Status
+                    </label>
+
+                    <select id="status" required>
+                        <option value="Not Started">
+                            Not Started
+                        </option>
+
+                        <option value="In Progress">
+                            In Progress
+                        </option>
+
+                        <option value="Completed">
+                            Completed
+                        </option>
+                    </select>
+
+
+                    <label for="notes">
+                        Notes
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        rows="4"
+                        placeholder="Add any notes about this assignment..."
+                    ></textarea>
+
+
+                    <div class="button-group">
+
+                        <button type="submit" id="save-btn">
+                            Add Assignment
+                        </button>
+
+                        <button
+                            type="button"
+                            id="cancel-edit-btn"
+                            class="secondary-btn hidden"
+                        >
+                            Cancel Edit
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <p id="assignment-message"></p>
+
+            </section>
+
+
+            <!-- ASSIGNMENT LIST -->
+            <section class="card">
+
+                <div class="assignment-header">
+                    <h2>My Assignments</h2>
+
+                    <select id="filter-status">
+                        <option value="All">
+                            All Assignments
+                        </option>
+
+                        <option value="Not Started">
+                            Not Started
+                        </option>
+
+                        <option value="In Progress">
+                            In Progress
+                        </option>
+
+                        <option value="Completed">
+                            Completed
+                        </option>
+                    </select>
+                </div>
+
+                <div id="assignment-list">
+
+                    <p id="empty-message">
+                        No assignments yet. Add your first assignment above!
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>CourseNotes — Engineering Design 2 Project</p>
+    </footer>
+
+
+    <!-- Our JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
